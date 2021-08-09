@@ -1,12 +1,14 @@
 package pl.coderslab.charity.service.implementation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import pl.coderslab.charity.model.Donation;
 import pl.coderslab.charity.repository.DonationRepo;
 import pl.coderslab.charity.service.DonationService;
 
 import java.util.List;
 
+@Service
 public class DonationServiceImpl implements DonationService {
     public final DonationRepo donationRepo;
 
@@ -25,7 +27,7 @@ public class DonationServiceImpl implements DonationService {
         List<Donation>  donations =  findAllDonations();
         int counter = 0;
         for(int i = 0; i < donations.size(); i++){
-            counter += ((Donation)donations.get(i)).getQuantity();
+            counter += donations.get(i).getQuantity();
         }
         return counter;
     }

@@ -9,4 +9,5 @@ public interface DonationService {
     List<Donation> findAllDonations();
     int getDonationQuantity();
     void addDonation(Donation donation);
+
 }

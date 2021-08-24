@@ -48,7 +48,7 @@
             <c:forEach items="${categoryList}" var="category" >
                 <div class="form-group form-group--checkbox">
                     <label>
-                        <form:checkbox path="categoryList"  value="${category.id}"/>
+                        <form:checkbox id="categories" path="categoryList"  value="${category.id}" />
                         <span class="checkbox"></span>
                         <span class="description">${category.name}</span>
                     </label>
@@ -67,7 +67,7 @@
                 <div class="form-group form-group--inline">
                     <label>
                         Liczba 60l worków:
-                        <form:input path = "quantity"/>
+                        <form:input  id="quantity" path = "quantity"/>
                     </label>
                 </div>
 
@@ -85,7 +85,7 @@
                 <c:forEach items="${institutionList}" var="institution" >
                     <div class="form-group form-group--checkbox">
                         <label>
-                            <form:radiobutton path="institution"  value="${institution.id}"/>
+                            <form:radiobutton id="institution" path="institution"  value="${institution.id}" />
                             <span class="checkbox radio"></span>
                             <span class="description">
                           <div class="title">${institution.name}</div>
@@ -109,22 +109,22 @@
                     <div class="form-section--column">
                         <h4>Adres odbioru</h4>
                         <div class="form-group form-group--inline">
-                            <label> Ulica <form:input path = "street"/> </label>
+                            <label> Ulica <form:input id="street" path = "street" /> </label>
                         </div>
 
                         <div class="form-group form-group--inline">
-                            <label> Miasto <form:input path = "city"/> </label>
+                            <label> Miasto <form:input id="city" path = "city" /> </label>
                         </div>
 
                         <div class="form-group form-group--inline">
                             <label>
-                                Kod pocztowy <form:input path = "zipCode"/>
+                                Kod pocztowy <form:input   id="zipCode" path = "zipCode"/>
                             </label>
                         </div>
 
                         <div class="form-group form-group--inline">
                             <label>
-                                Numer telefonu <input type="number" name="phone" />
+                                Numer telefonu <input type="number" name="phone" id="phone"/>
                             </label>
                         </div>
                     </div>
@@ -132,17 +132,17 @@
                     <div class="form-section--column">
                         <h4>Termin odbioru</h4>
                         <div class="form-group form-group--inline">
-                            <label> Data <form:input  type="date" path = "pickUpDate"/> </label>
+                            <label> Data <form:input  id="date" type="date" path = "pickUpDate" /> </label>
                         </div>
 
                         <div class="form-group form-group--inline">
-                            <label> Godzina <form:input type="time" path = "pickUpTime"/> </label>
+                            <label> Godzina <form:input id="time" type="time" path = "pickUpTime" /> </label>
                         </div>
 
                         <div class="form-group form-group--inline">
                             <label>
                                 Uwagi dla kuriera
-                                    <form:input  path = "pickUpComment"/>
+                                    <form:input id="comment" path = "pickUpComment" />
                             </label>
                         </div>
                     </div>
@@ -156,23 +156,20 @@
             <!-- STEP 6 -->
             <div data-step="5">
                 <h3>Podsumowanie Twojej darowizny</h3>
-
                 <div class="summary">
                     <div class="form-section">
                         <h4>Oddajesz:</h4>
                         <ul>
                             <li>
                                 <span class="icon icon-bag"></span>
-                                <span class="summary--text"
-                                >4 worki ubrań w dobrym stanie dla dzieci</span
-                                >
+                                <span class="summary--text">
+                    <span id="quantityView"></span>
+                    worki (
+                    <span id="categoriesView"></span> )</span>
                             </li>
-
                             <li>
                                 <span class="icon icon-hand"></span>
-                                <span class="summary--text"
-                                >Dla fundacji "Mam marzenie" w Warszawie</span
-                                >
+                                <span class="summary--text">Dla: <span id="institutionView"></span></span>
                             </li>
                         </ul>
                     </div>
@@ -181,19 +178,19 @@
                         <div class="form-section--column">
                             <h4>Adres odbioru:</h4>
                             <ul>
-                                <li>Prosta 51</li>
-                                <li>Warszawa</li>
-                                <li>99-098</li>
-                                <li>123 456 789</li>
+                                <li><span id="cityView"></span></li>
+                                <li><span id="zipCodeView"></span></li>
+                                <li><span id="streetView"></span></li>
+                                <li><span id="phoneView"></span></li>
                             </ul>
                         </div>
 
                         <div class="form-section--column">
                             <h4>Termin odbioru:</h4>
                             <ul>
-                                <li>13/12/2018</li>
-                                <li>15:40</li>
-                                <li>Brak uwag</li>
+                                <li><span id="dateView"></span></li>
+                                <li><span id="timeView"></span></li>
+                                <li><span id="commentView"></span></li>
                             </ul>
                         </div>
                     </div>
@@ -210,7 +207,7 @@
 
 <jsp:include page="footer.jsp"/>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="<c:url value="resources/js/app.js"/>"></script>
 </body>
 </html>

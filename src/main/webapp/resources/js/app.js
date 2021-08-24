@@ -164,6 +164,43 @@ document.addEventListener("DOMContentLoaded", function() {
       this.$step.parentElement.hidden = this.currentStep >= 5;
 
       // TODO: get data from inputs and show them in summary
+
+      let quantity = $("#quantity").val();
+      $("#quantityView").text(quantity);
+
+      let city = $("#city").val();
+      $("#cityView").text(city);
+
+      let zip = $("#zipCode").val();
+      $("#zipCodeView").text(zip);
+
+      let street = $("#street").val();
+      $("#streetView").text(street);
+
+      let phone = $("#phone").val();
+      $("#phoneView").text(phone);
+
+      let date = $("#date").val();
+      $("#dateView").text(date);
+
+      let time = $("#time").val();
+      $("#timeView").text(time);
+
+      let comment = $("#comment").val();
+      $("#commentView").text(comment);
+
+      let institution = $("#institution:checked").next().next().children().get(0).innerText;
+      // console.log(institution)
+      $("#institutionView").text(institution);
+
+      let categories = [];
+      $("#categories:checked").each(function () {
+        categories.push(
+            $(this).parent().children().get(3).innerText
+        );
+      });
+      console.log(categories)
+      $("#categoriesView").text(categories.join(", "));
     }
 
   }

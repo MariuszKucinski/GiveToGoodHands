@@ -31,7 +31,7 @@
                 wiedzieć komu najlepiej je przekazać.
             </p>
             <p data-step="3">
-                Wybierz jedną, do
+                Wybierz jedną organizację, do
                 której trafi Twoja przesyłka.
             </p>
             <p data-step="4">Podaj adres oraz termin odbioru rzeczy.</p>
@@ -155,7 +155,7 @@
 
             <!-- STEP 6 -->
             <div data-step="5">
-                <h3>Podsumowanie Twojej darowizny</h3>
+                <h3>Podsumowanie Twojej dobrej darowizny</h3>
                 <div class="summary">
                     <div class="form-section">
                         <h4>Oddajesz:</h4>

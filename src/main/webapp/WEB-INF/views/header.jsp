@@ -34,6 +34,7 @@
             <h1>
                 Zacznij pomagać!<br/>
                 Oddaj niechciane rzeczy w zaufane ręce
+                Będziesz super człowiekiem!
             </h1>
         </div>
     </div>

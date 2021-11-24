@@ -41,6 +41,8 @@ public class DonationController {
         model.addAttribute("categoryList", categoryList);
         List<Institution> institutionList = institutionService.findAllInstitutions();
         model.addAttribute(("institutionList"), institutionList);
+
+        int[] tab = {1,2,3,4,5};
         return "form";
     }
 

@@ -17,10 +17,10 @@ We pick an organisation that we mostly like to support</br>
 After this we chose time and address for delivery guy to come and confirm donation</br></br>
 <p>When the repository is downloaded you will have to do a few things.</br>
 1)Download all needed software bulleted above. </br>
-2)Launch your IDE(Intellij UE, eclipse, etc.)
-3)Open project as "new project from existing source", check Maven project and "import project from external mode"
-4)Connect your IDE with MySQL and create database.
-5)Configure Tomcat. Application context in deployment tab should looks like '/' and artifact should be set on 'war:exploded'
+2)Launch your IDE(Intellij UE, eclipse, etc.)</br>
+3)Open project as "new project from existing source", check Maven project and "import project from external mode"</br>
+4)Connect your IDE with MySQL and create database.</br>
+5)Configure Tomcat. Application context in deployment tab should looks like '/' and artifact should be set on 'war:exploded'</br>
 Enjoy!</p> 
 </br>
 (PL) </br></br>
@@ -40,8 +40,8 @@ Wybieramy organizację, którą najbardziej chcemy wesprzeć</br>
 Następnie ustalamy miejsce i czas w którym kurier ma przyjechać i odebrać rzeczy oraz potwierdzamy darowiznę</br></br>
 <p>Po pobraniu repozytorium będziesz musiał zrobić kilka rzeczy.</br>
 1) Pobierz wszystkie potrzebne oprogramowanie wymienione powyżej. </br>
-2) Uruchom swoje IDE (Intellij UE, Eclipse itp.)
-3) Otwórz projekt jako „nowy projekt z istniejącego źródła”, wybierz projekt Maven i „importuj projekt z trybu zewnętrznego”
-4) Połącz swoje IDE z MySQL i utwórz bazę danych.
-5) Skonfiguruj Tomcata. Kontekst aplikacji na karcie wdrożenia powinien wyglądać tak - „/”, a artefakt powinien być ustawiony na „war:exploded”
+2) Uruchom swoje IDE (Intellij UE, Eclipse itp.)</br>
+3) Otwórz projekt jako „nowy projekt z istniejącego źródła”, wybierz projekt Maven i „importuj projekt z trybu zewnętrznego”</br>
+4) Połącz swoje IDE z MySQL i utwórz bazę danych.</br>
+5) Skonfiguruj Tomcata. Kontekst aplikacji na karcie wdrożenia powinien wyglądać tak - „/”, a artefakt powinien być ustawiony na „war:exploded”</br>
 Korzystaj!

@@ -2,8 +2,8 @@
 Web application that helps donate in good hands</br>
 
 (ENG) </br>
-<p>This program enable us to create and manage Books from API inquiries and web view  
-Books are saved and updated via API in ORM database created with Hibernate/br>
+<p>This program enable us to donate goods via web form to chosen non-profit organisation</br>
+Donation are saved in ORM database created with Hibernate/br>
 During creating this program I consolidated the knowledge about: 
 <ul> 
 <li>Spring</li> 
@@ -11,10 +11,10 @@ During creating this program I consolidated the knowledge about:
 <li>Java</li>
 <li>JavaScript</li>
 </ul>
-We can create, update and delete Books with API inquiries</br> 
-Program operates using Spring Data JPA</br>
-Every operation is saved in the Hibernate ORM database</br>
-Additionally we can operate on books from web view</br></br>
+On the main page we can see how many donations and bags had been already given</br> 
+During filling the form we can chose what are we donating, how much of it</br>
+We pick an organisation that we mostly like to support</br>
+After this we chose time and address for delivery guy to come and confirm donation</br></br>
 <p>When the repository is downloaded you will have to do a few things.</br>
 1)Download all needed software bulleted above. </br>
 2)Launch your IDE(Intellij UE, eclipse, etc.)
@@ -34,10 +34,10 @@ Tworząc ten program utrwaliłem swoją wiedzę na temat:
 <li>Java</li>
 <li>JavaScript</li>
 </ul>
-Możemy tworzyć, aktualizować i usuwać książki za pomocą zapytań API</br>
-Program wykorzystuje Spring Data JPA</br>
-Każda operacja na książce jest zapisywana w bazie danych poprzez Hibernate</br>
-Dodatkowo wszystkie operacje możemy wykonywać również z poziomu widoku internetowego</br></br>
+Na głównej stronie możemy zobaczyć ile darów oraz ile worków zostało już oddanych</br> 
+Podczas wypełniania formularza podajemy jakie kategorie oraz ile worków z dobrami oddajemy</br>
+Wybieramy organizację, którą najbardziej chcemy wesprzeć</br>
+Następnie ustalamy miejsce i czas w którym kurier ma przyjechać i odebrać rzeczy oraz potwierdzamy darowiznę</br></br>
 <p>Po pobraniu repozytorium będziesz musiał zrobić kilka rzeczy.</br>
 1) Pobierz wszystkie potrzebne oprogramowanie wymienione powyżej. </br>
 2) Uruchom swoje IDE (Intellij UE, Eclipse itp.)

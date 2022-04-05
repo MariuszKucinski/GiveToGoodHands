@@ -3,7 +3,7 @@ Web application that helps donate in good hands</br>
 
 (ENG) </br>
 <p>This program enable us to donate goods via web form to chosen non-profit organisation</br>
-Donation are saved in ORM database created with Hibernate/br>
+Donation are saved in ORM database created with Hibernate</br>
 During creating this program I consolidated the knowledge about: 
 <ul> 
 <li>Spring</li> 

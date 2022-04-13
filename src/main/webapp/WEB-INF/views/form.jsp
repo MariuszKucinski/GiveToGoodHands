@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
 
-    <link rel="stylesheet" href="<c:url value="resources/css/style.css"/>"/>
+    <link rel="stylesheet" href="<c:url value="../../resources/css/style.css"/>"/>
 </head>
 <body>
 <jsp:include page="header.jsp"/>
@@ -41,7 +41,7 @@
     <div class="form--steps-container">
         <div class="form--steps-counter">Krok <span>1</span>/4</div>
 
-        <form:form action="" modelAttribute="donation">
+        <form:form action="/donation/form" method="post" modelAttribute="donation">
             <!-- STEP 1: class .active is switching steps -->
             <div data-step="1" class="active">
                 <h3>Zaznacz co chcesz oddać:</h3>
@@ -208,7 +208,7 @@
 <jsp:include page="footer.jsp"/>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="<c:url value="resources/js/app.js"/>"></script>
+<script src="<c:url value="../../resources/js/app.js"/>"></script>
 </body>
 </html>
 

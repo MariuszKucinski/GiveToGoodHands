@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <header class="header--form-page">
     <nav class="container container--70">
         <ul class="nav--actions">
@@ -74,6 +75,6 @@
     </div>
 </footer>
 
-<script src="js/app.js"></script>
+<script src="<c:url value="../../resources/js/app.js"/>"></script>
 </body>
 </html>

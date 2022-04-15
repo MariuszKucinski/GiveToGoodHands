@@ -4,7 +4,7 @@ Web application that helps donate in good hands</br>
 (ENG) </br>
 <p>This program enable us to donate goods via web form to chosen non-profit organisation</br>
 Donation are saved in ORM database created with Hibernate</br>
-During creating this program I consolidated the knowledge about: 
+During creating backend to this program I consolidated the knowledge about: 
 <ul> 
 <li>Spring</li> 
 <li>Hibernate</li>
@@ -26,7 +26,7 @@ Enjoy!</p>
 <p> 
 Ten program umożliwia nam tworzenie i zarządzanie książkami za pomocą zapytań api oraz widoku internetowego.
 Książki są zapisywane i aktualizowane poprzez API w bazie danych stworzonej w technologii ORM za pomocą Hibernate</br>
-Tworząc ten program utrwaliłem swoją wiedzę na temat:
+Tworząc backend to tego programu utrwaliłem swoją wiedzę na temat:
 <ul> 
 <li>Spring</li> 
 <li>Hibernate</li>
